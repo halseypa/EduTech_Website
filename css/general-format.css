@@ -1,0 +1,192 @@
+li {
+    margin-right: 40px;
+}
+.nav-item li {
+    margin-right: 10px;
+}
+.values{
+    position: relative;
+    overflow: hidden;
+}
+.box{
+     padding: 40px 20px;
+     height: 300px;
+     padding-top: 90px;
+}
+.box .box-home{
+    padding: 40px 60px;
+    z-index: 100;
+    position: relative;
+}
+.box .box-home > h4{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.box .box-home > p{
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(204, 218, 229);
+}
+.icon-text{
+    position: absolute;
+    top: 24%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    z-index: -100
+}
+.icon-text p{
+    font-weight: 700;
+    font-size: 90px;
+    font-family: 'Arial', sans-serif;
+}
+.header-footer-font{
+  font-family: 'Lato', sans-serif;
+}
+h3{
+  font-family: 'Lato', sans-serif;
+}
+/*img properties*/
+#splash-img {
+  width: 100%; /*for IE*/
+  background:
+    url("../imgs/bg-menu.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+#lead-gen-img{
+    background: url("../imgs/tiger01.jpg") ;
+    max-height: 400px;
+    overflow: hidden;
+    background-size: cover;
+}
+#lead-gen-img:hover {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+#inside-sales-img{
+    background: url("../imgs/tiger02.jpg") ;
+    max-height: 400px;
+    overflow: hidden;
+    background-size: cover;
+}
+#inside-sales-img:hover {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+#sem-img{
+    background: url("../imgs/tiger03.jpg") ;
+    max-height: 400px;
+    overflow: hidden;
+    background-size: cover;
+}
+#sem-img:hover {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+#brand-logo {
+  height:60px;
+}
+/*text on splash-img properties*/
+.title {
+  position: relative;
+  padding-top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+.heading{
+  font-family: 'Roboto', sans-serif;
+}
+.general-text{
+  color: rgb(90, 90, 90);
+  font-family: 'Roboto', sans-serif;
+}
+.send-btn {
+  color: rgb(230, 230, 230);
+}
+#service-text {
+  text-align: center;
+}
+.service-btn {
+  text-align: center;
+}
+.btn {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #3EB770;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+}
+.btn:hover {
+  background-color: #4CD383;
+  color: rgb(230, 230, 230);
+  border: none;
+}
+
+/*format divider on screen*/
+.invisible-divider {
+    border-color:rgba(0,0,0,0);
+}
+
+/*media queries*/
+@media screen and (max-width: 400px) {
+  #splash-img{
+    padding-top: 100px;
+  }
+  .general-text{
+    font-size: 14px;
+  }
+  .box{
+       padding: 40px 20px;
+       height: 200px;
+       padding-top: 200px;
+  }
+  .box .box-home{
+      padding: 0px 0px;
+      z-index: 100;
+      position: relative;
+      padding-top: 200px;
+  }
+  .mission-image {
+    display: none;
+  }
+  .blog-image {
+    display: none;
+  }
+  .blog-btn {
+    display: inline;
+    width: 50%;
+  }
+  .service-inside-sales-image{
+    display: none;
+  }
+  .service-search-engine-image{
+    display: none;
+  }
+  .service-lead-gen-image{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box{
+       padding: 40px 20px;
+       height: 250px;
+       padding-top: 60px;
+  }
+  .box .box-home{
+      padding: 0px 0px;
+      z-index: 100;
+      position: relative;
+  }
+}

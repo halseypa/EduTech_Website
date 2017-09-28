@@ -1,0 +1,146 @@
+li {
+    margin-right: 40px;
+}
+.nav-item li {
+    margin-right: 10px;
+}
+.values{
+    position: relative;
+    overflow: hidden;
+}
+.box{
+     padding: 40px 20px;
+     height: 300px;
+}
+.box .box-home{
+    padding: 40px 60px;
+    z-index: 100;
+    position: relative;
+}
+.box .box-home > h4{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.box .box-home > p{
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(204, 218, 229);
+}
+.icon-text{
+    position: absolute;
+    top: 24%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    z-index: -100
+}
+.icon-text p{
+    font-weight: 700;
+    font-size: 90px;
+    font-family: 'Arial', sans-serif;
+}
+
+/*img properties*/
+#splash-img {
+  width: 100%; /*for IE*/
+  background:
+    url("../bg-menu.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+#lead-gen-img{
+    background: url("../tiger01.jpg") ;
+    max-height: 400px;
+    overflow: hidden;
+    background-size: cover;
+}
+#inside-sales-img{
+    background: url("../tiger02.jpg") ;
+    max-height: 400px;
+    overflow: hidden;
+    background-size: cover;
+}
+#sem-img{
+    background: url("../tiger03.jpg") ;
+    max-height: 400px;
+    overflow: hidden;
+    background-size: cover;
+}
+#brand-logo {
+  height:60px;
+}
+/*text on splash-img properties*/
+.title {
+  position: relative;
+  padding-top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+#service-text {
+  text-align: center;
+}
+.service-btn {
+  text-align: center;
+}
+
+/*format divider on screen*/
+.invisible-divider {
+    border-color:rgba(0,0,0,0);
+}
+
+/*media queries*/
+@media screen and (max-width: 400px) {
+  #splash-img{
+    padding-top: 100px;
+  }
+  .box{
+       padding: 40px 20px;
+       height: 200px;
+  }
+  .box .box-home{
+      padding: 0px 0px;
+      z-index: 100;
+      position: relative;
+  }
+  .mission-image {
+    display: none;
+  }
+  .blog-image {
+    display: none;
+  }
+  .blog-btn {
+    display: inline;
+    width: 50%;
+  }
+  .service-inside-sales-image{
+    display: none;
+  }
+  .service-search-engine-image{
+    display: none;
+  }
+  .service-lead-gen-image{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box{
+       padding: 40px 20px;
+       height: 250px;
+  }
+  .box .box-home{
+      padding: 0px 0px;
+      z-index: 100;
+      position: relative;
+  }
+}
