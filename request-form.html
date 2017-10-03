@@ -45,8 +45,8 @@
         </button>
         <div class="navbar-collapse collapse justify-content-stretch" id="navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./services.html"><b class="header-footer-font">Services</b></a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><b class="header-footer-font">Services</b></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./blog.html"><b class="header-footer-font">Blog</b></a>
@@ -55,27 +55,65 @@
                     <a class="nav-link" href="./about.html"><b class="header-footer-font">About Us</b></a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-secondary" href="#" role="button"><b class="header-footer-font">Request A Consult</b></a>
+                  <a class="btn btn-secondary" href="./request-form.html" role="button"><b class="header-footer-font">Request A Consult</b></a>
                 </li>
             </ul>
         </div>
       </div>
     </nav>
 
-    <header id="splash-img">
+    <header class="header-img" id="splash-img-consult">
       <div class="title">
-        <h1>Request A Consult</h1>
+        <h1 class="floating-head">Request A Consult</h1>
       </div>
     </header>
 
 
     <div class="container">
-      <hr class="invisible-divider">
+      <div id="form-messages"></div>
+    </div>
+
+    <hr class="invisible-divider">
+
+    <div class="container">
+      <form id="ajax-contact" method="post" action="form_handling.php">
+        <div class="field">
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+          <label for="service-select">Service: </label>
+          <select type="service-select" name="service-select" id="service-select" required>
+            <option class="text-muted">Please select service</option>
+            <option>Lead Generation</option>
+            <option>Inside Sales</option>
+            <option >Search Engine Marketing</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rquired></textarea>
+        </div>
+
+        <div class="field">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+
+<!--
       <form class="well form-horizontal" action="form_handling.php" method="post"  id="ajax-contact">
         <fieldset>
 
         <!-- Full Name input-->
-
+<!--
         <div class="form-group field">
           <label class="col-md-4 control-label general-text" for="name">Name</label>
           <div class="col-md-4 inputGroupContainer">
@@ -86,7 +124,8 @@
           </div>
         </div>
 
-        <!-- Email input-->
+        <!-- Email input
+
         <div class="form-group field">
           <label class="col-md-4 control-label general-text" for="email">E-Mail</label>
           <div class="col-md-4 inputGroupContainer">
@@ -97,14 +136,14 @@
           </div>
         </div>
 
-        <!-- Select Basic -->
+        <!-- Select Basic
 
         <div class="form-group">
           <label class="col-md-4 control-label general-text">Service</label>
             <div class="col-md-4 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                <select name="service" class="form-control selectpicker" id="service-select">
+                <select name="service-select" class="form-control selectpicker" id="service-select">
                   <option value=" " class="text-muted">Please select service</option>
                   <option>Lead Generation</option>
                   <option>Inside Sales</option>
@@ -114,21 +153,21 @@
           </div>
         </div>
 
-        <!-- Body/Content input -->
+        <!-- Body/Content input
         <div class="form-group">
-          <label class="col-md-4 control-label general-text">Description</label>
+          <label class="col-md-4 control-label general-text" for="message">Description</label>
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                	<textarea class="form-control" name="message" id="message" placeholder="Description" for="message" required></textarea>
+                	<textarea class="form-control" name="message" id="message" placeholder="Description" required></textarea>
               </div>
             </div>
         </div>
 
-        <!-- Success message -->
-        <div class="alert alert-success" role="alert" id="success_message">Success. <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+        <!-- Submission message
+        <div class="alert alert-success success" role="alert" id="form-messages">Success. <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
 
-        <!-- Button -->
+        <!-- Button
         <div class="form-group">
           <label class="col-md-4 control-label"></label>
           <div class="col-md-4">
@@ -179,4 +218,4 @@
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/spp.js"></script>
+    <script src="./js/app.js"></script>

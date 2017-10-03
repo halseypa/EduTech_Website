@@ -36,6 +36,7 @@ $.ajax({
     $('#name').val('');
     $('#email').val('');
     $('#message').val('');
+    #('#service-select').val('');
 }).fail(function(data) {
     // Make sure that the formMessages div has the 'error' class.
     $(formMessages).removeClass('success');

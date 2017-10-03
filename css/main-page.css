@@ -9,6 +9,9 @@
 li {
     margin-right: 40px;
 }
+.header-img {
+    width: 100% auto;
+}
 .nav-item li {
     margin-right: 10px;
 }
@@ -83,7 +86,7 @@ h4{
 }
 /*service images*/
 #lead-gen{
-    background: url("../imgs/tiger01.jpg") ;
+    background: url("../imgs/lead-gen.png") ;
     max-height: 400px;
     overflow: hidden;
     background-size: cover;
@@ -93,7 +96,7 @@ h4{
   filter: alpha(opacity=85);
 }
 #inside-sales{
-    background: url("../imgs/tiger02.jpg") ;
+    background: url("../imgs/inside-sales.png") ;
     max-height: 400px;
     overflow: hidden;
     background-size: cover;
@@ -103,7 +106,7 @@ h4{
   filter: alpha(opacity=85);
 }
 #sem{
-    background: url("../imgs/tiger03.jpg") ;
+    background: url("../imgs/sem.png") ;
     max-height: 400px;
     overflow: hidden;
     background-size: cover;
@@ -121,7 +124,7 @@ h4{
 }
 
 /*media queries*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 412px) {
    #one {
     float: none;
     margin-right:0;
@@ -131,6 +134,9 @@ h4{
   }
   #carouselControls {
     padding-top: 40px;
+  }
+  .mobile-hide {
+    display: none;
   }
   .general-text{
     font-size: 14px;
@@ -156,7 +162,7 @@ h4{
   }
 
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
    #one {
     float: none;
     margin-right:0;

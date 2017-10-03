@@ -52,12 +52,40 @@ h3{
 #splash-img {
   width: 100%; /*for IE*/
   background:
-    url("../imgs/bg-menu.jpg") no-repeat center center fixed;
+    url("../imgs/bg-menu.jpg") no-repeat center center;
+  background-size: auto;
+  height: 100%;
+}
+#splash-img-blog {
+  width: 100%; /*for IE*/
+  background:
+    url("../imgs/blog.png") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+}
+#splash-img-about {
+  width: 100%; /*for IE*/
+  background:
+    url("../imgs/about-us.png") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+}
+#splash-img-services {
+  width: 100%; /*for IE*/
+  background:
+    url("../imgs/services.png") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+}
+#splash-img-consult {
+  width: 100%; /*for IE*/
+  background:
+    url("../imgs/consult.png") no-repeat center center;
   background-size: cover;
   height: 100%;
 }
 #lead-gen-img{
-    background: url("../imgs/tiger01.jpg") ;
+    background: url("../imgs/lead-gen.png") ;
     max-height: 400px;
     overflow: hidden;
     background-size: cover;
@@ -67,7 +95,7 @@ h3{
   filter: alpha(opacity=85);
 }
 #inside-sales-img{
-    background: url("../imgs/tiger02.jpg") ;
+    background: url("../imgs/inside-sales.png") ;
     max-height: 400px;
     overflow: hidden;
     background-size: cover;
@@ -77,7 +105,7 @@ h3{
   filter: alpha(opacity=85);
 }
 #sem-img{
-    background: url("../imgs/tiger03.jpg") ;
+    background: url("../imgs/sem.png") ;
     max-height: 400px;
     overflow: hidden;
     background-size: cover;
@@ -140,9 +168,13 @@ h1 {
 }
 
 /*media queries*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 412px) {
   #splash-img{
     padding-top: 100px;
+  }
+  .floating-head{
+    margin-top: 40%;
+    font-size: 1.17em;
   }
   .general-text{
     font-size: 14px;
@@ -178,11 +210,15 @@ h1 {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .box{
        padding: 40px 20px;
        height: 250px;
        padding-top: 60px;
+  }
+  .floating-head{
+    margin-top: 40%;
+    font-size: 1.5em;
   }
   .box .box-home{
       padding: 0px 0px;
