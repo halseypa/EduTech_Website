@@ -1,14 +1,23 @@
-textarea {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    width: 100%;
-}
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  background: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+#page-wrapper {
+  width: 640px;
+  background: #FFFFFF;
+  padding: 1em;
+  margin: 1em auto;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
 }
 
 h1 {
@@ -27,14 +36,6 @@ label {
 }
 
 input {
-  width: 100%;
-  padding: 0.5em 0.5em;
-  font-size: 1.2em;
-  border-radius: 3px;
-  border: 1px solid #D9D9D9;
-}
-
-select {
   width: 100%;
   padding: 0.5em 0.5em;
   font-size: 1.2em;
@@ -63,6 +64,7 @@ button {
   -webkit-font-smoothing: antialiased;
   font-weight: bold;
   margin: 0;
+  width: 100%;
   text-align: center;
 }
 
