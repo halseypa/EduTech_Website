@@ -1,10 +1,22 @@
 #carouselControls {
   width: 100%;
   max-width: 2000px;
-  padding-top: 0px;
+  padding-top: -20px;
   margin: 0;
 }
+.carousel{
+  padding-top: 0px;
+}
 
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a,
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
 
 li {
     margin-right: 40px;
@@ -171,7 +183,7 @@ h4{
     border-bottom:2px solid #000;
   }
   #carouselControls {
-    padding-top: 40px;
+    padding-top: 0px;
   }
   .box{
        padding: 40px 20px;
@@ -181,6 +193,11 @@ h4{
       padding: 0px 0px;
       z-index: 100;
       position: relative;
+  }
+}
+@media screen and (max-width: 412px){
+  #carouselControls {
+    padding-top: 1px;
   }
 }
 @media screen and (min-width: 1025px){

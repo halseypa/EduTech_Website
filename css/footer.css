@@ -99,6 +99,10 @@
     line-height: 25px;
 }
 
+footer {
+    box-shadow: 0 50vh 0 50vh #dbdbdb;
+}
+
 @media screen and (max-width: 767px) {
     #myFooter {
         text-align: left;

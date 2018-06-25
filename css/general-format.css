@@ -1,6 +1,15 @@
 li {
     margin-right: 40px;
 }
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a,
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
 .nav-item li {
     margin-right: 10px;
 }
@@ -66,21 +75,21 @@ h3{
 #splash-img-about {
   width: 100%; /*for IE*/
   background:
-    url("../imgs/about-us.png") no-repeat center center;
+    url("../imgs/about-us-3.png") no-repeat center center;
   background-size: cover;
   height: 100%;
 }
 #splash-img-services {
   width: 100%; /*for IE*/
   background:
-    url("../imgs/services.png") no-repeat center center;
+    url("../imgs/services-2.png") no-repeat center center;
   background-size: cover;
   height: 100%;
 }
 #splash-img-consult {
   width: 100%; /*for IE*/
   background:
-    url("../imgs/consult.png") no-repeat center center;
+    url("../imgs/consult-3.png") no-repeat center center;
   background-size: cover;
   height: 100%;
 }
@@ -111,6 +120,16 @@ h3{
     background-size: cover;
 }
 #sem-img:hover {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+#sem-img-sm{
+    background: url("../imgs/sem-small.png") ;
+    max-height: 400px;
+    overflow: hidden;
+    background-size: cover;
+}
+#sem-img-sm:hover {
   opacity: 0.85;
   filter: alpha(opacity=85);
 }
@@ -166,11 +185,44 @@ h1 {
 .invisible-divider {
     border-color:rgba(0,0,0,0);
 }
+#splash-img-services{
+  background-size: 100%;
+  padding-top: -20px;
+  margin-top: -20px;
+}
+#splash-img-consult{
+  background-size: 100%;
+  padding-top: -160px;
+  margin-top: -160px;
+  padding-bottom: -120px;
+  margin-bottom: -120px;
+}
+#splash-img-about{
+  background-size: 100%;
+  padding-top: -160px;
+  margin-top: -160px;
+  padding-bottom: -120px;
+  margin-bottom: -120px;
+}
 
 /*media queries*/
 @media screen and (max-width: 412px) {
   #splash-img{
     padding-top: 100px;
+  }
+  #splash-img-consult{
+    background-size: 100%;
+    padding-top: -85px;
+    margin-top: -85px;
+    padding-bottom: -80px;
+    margin-bottom: -80px;
+  }
+  #splash-img-about{
+    background-size: 100%;
+    padding-top: -85px;
+    margin-top: -85px;
+    padding-bottom: -80px;
+    margin-bottom: -80px;
   }
   .floating-head{
     margin-top: 40%;
@@ -210,7 +262,21 @@ h1 {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1024px){
+  #splash-img-consult{
+    background-size: 100%;
+    padding-top: -270px;
+    margin-top: -270px;
+    padding-bottom: -250px;
+    margin-bottom: -250px;
+  }
+  #splash-img-about{
+    background-size: 100%;
+    padding-top: -270px;
+    margin-top: -270px;
+    padding-bottom: -250px;
+    margin-bottom: -250px;
+  }
   .box{
        padding: 40px 20px;
        height: 250px;
